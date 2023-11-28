@@ -5,7 +5,7 @@ ezy setup just some steps
 1. signup here if you dont have ngrok account
 https://dashboard.ngrok.com
 
-2. copy token to secrets as `NGROK_AUTH_TOKEN`
+2. copy token to secrets as `2Yp2LwYUfn6QCNIwgF1uZr3ERmM_3YPhWSBYQwtmiHki1pQH9`
 
 3. copy host address from https://dashboard.ngrok.com/status/tunnels
 
