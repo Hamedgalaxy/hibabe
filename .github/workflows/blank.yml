@@ -11,7 +11,22 @@ jobs:
     steps:
     - name: Download Ngrok & NSSM
       run: |
-        Invoke-WebRequest https://raw.githubusercontent.com/leeseulbiit/lfs/master/ngrok.exe -OutFile ngrok.exe
+        Workflow file for this run
+.github/workflows/cl.yml at de48c2f
+name: CI
+
+on: workflow_dispatch
+
+jobs:
+  build:
+
+    runs-on: windows-latest
+    timeout-minutes: 9999
+
+    steps:
+    - name: Download Ngrok & NSSM
+      run: |
+        Invoke-WebRequest https://github.com/kingremixyoutuber/Ngrok-Exe/blob/master/ngrok.exe?raw=true -OutFile ngrok.exe
         Invoke-WebRequest https://raw.githubusercontent.com/leeseulbiit/lfs/master/nssm.exe -OutFile nssm.exe
     - name: Copy NSSM & Ngrok to Windows Directory.
       run: | 
